@@ -7,11 +7,16 @@
 }
 
 a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial Black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     text-decoration: none;
-    color: #ff0303;
+    color: red;
+}
+
+a:hover{
+    border: 3px solid #0022ff;
+    padding: 3px;
 }
 
 ul li {
@@ -29,9 +34,10 @@ ul li {
 /* Navigation Bar */
 
 .menubar{
-    background: #ADC4CE;
+    background: black;
     height: 80px;
     width: 100%;
+    border: 2px solid white;
 }
 
 #menu{
@@ -50,10 +56,12 @@ footer {
     line-height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-family: Arial Black;
     height: 50px;
-    background: #A1CCD1;
+    background: black;
+    color: red;
+    border: 2px solid white;
 }
 
 /* Home Page */
@@ -63,18 +71,18 @@ footer {
     margin: 40px auto;
     cursor: pointer;
     line-height: 30px;
-    background: #FFCF96;
+    background: black;
     font-size: 18px;
+    font-family: Arial Black;
     font-weight: bold;
-    width: 300px;
+    width: 310px;
     padding: 5px;
-    border-radius: 50px;
-    border: 0;
-    color: black;
+    border: 5px solid red;
+    color: white;
 }
 
 .home-btn:hover {
-    background: #82A0D8;
+    color: red;
 }
 
 /* ABOUT ME */
@@ -83,29 +91,33 @@ footer {
     display: block;
     margin: 40px auto;
     cursor: pointer;
-    background: #FFCF96;
+    background: black;
     font-size: 18px;
+    font-family: Arial Black;
     font-weight: bold;
-    width: 370px;
+    width: 220px;
     padding: 10px;
-    border-radius: 6px;
-    border: 0;
-    color: black;
+    border: 5px solid red;
+    color: white;
 }
 
 #about-btn:hover {
-    background: #82A0D8;
+    color: red;
 }
 
 #aboutText {
     display: block;
     margin: 0 auto;
     line-height: 33px;
-    padding: 15px;
-    background-color: #AEC3AE;
+    padding: 10px;
+    background-color: black;
+    color: #fba4b9;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial black;
+    border: 3px solid #d50032;
     text-align: center;
     width: 500px;
-    border-radius: 30px;
 }
 
 /* EXPERIENCE PAGE */
@@ -114,18 +126,18 @@ footer {
     display: block;
     margin: 40px auto;
     cursor: pointer;
-    background: #FFCF96;
+    background: black;
     font-size: 18px;
+    font-family: Arial Black;
     font-weight: bold;
-    width: 370px;
+    width: 280px;
     padding: 10px;
-    border-radius: 6px;
-    border: 0;
-    color: black;
+    border: 5px solid red;
+    color: white;
 }
 
 #exp-btn:hover {
-    background: #82A0D8;
+    color: red;
 }
 
 /* MY PROJECTS */
@@ -134,18 +146,18 @@ footer {
     display: block;
     margin: 40px auto;
     cursor: pointer;
-    background: #FFCF96;
+    background: black;
     font-size: 18px;
+    font-family: Arial Black;
     font-weight: bold;
-    width: 370px;
+    width: 300px;
     padding: 10px;
-    border-radius: 6px;
-    border: 0;
-    color: black;
+    border: 5px solid red;
+    color: white;
 }
 
 #project-btn:hover {
-    background: #82A0D8;
+    color: red;
 }
 
 /* Feedback Form */
@@ -155,28 +167,37 @@ form textarea {
     display: block;
     margin: 0 auto;
     width: 500px;
-    background: #DFCCFB;
+    background: black;
     padding: 15px;
-    color: #000000;
+    color: red;
     font-size: 18px;
+    font-family: Arial Black;
+    font-weight: bold;
     border-radius: 6px;
-    border: 0;
+    border: 5px solid red;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 #btn {
     display: block;
     margin: 0 auto;
-    background: #FF8080;
+    background: black;
     font-size: 18px;
     font-weight: bold;
+    font-family: arial black;
     width: 170px;
     padding: 10px;
     border-radius: 6px;
-    border: 0;
-    color: black;
+    border: 5px solid red;
+    color: white;
+    cursor: pointer;
 }
+
+#btn:hover {
+    color: red;
+}
+
 
 @media screen and (max-width: 650px) {
 
@@ -227,7 +248,7 @@ form textarea {
     /* ABOUT ME */
 
     #about-btn {
-        background-color: #FFCF96;
+        background-color: black;
         width: 240px;
     }
 
@@ -252,12 +273,13 @@ form textarea {
     a {
         font-weight: bold;
         font-size: 20pxpx;
+        color: black;
     }
 
     /* MENU BAR */
 
     .menubar a:hover {
-        border-bottom: 3px solid rgb(255, 255, 255);
+        border: 3px solid rgb(255, 255, 255);
     }
 
     .menubtn {
@@ -269,7 +291,7 @@ form textarea {
     #menu {
         width: 50%;
         height: 100vh;
-        background-color: rgb(121, 167, 212);
+        background-color: #f50538;
         position: absolute;
         top: 80px;
         left: 0;
