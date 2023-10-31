@@ -1,4 +1,7 @@
 // Variables
+
+let menu = document.getElementById('menu');
+let menubtn = document.getElementById('menubtn');
 let homeBtn = document.getElementById('home-btn')
 let backgroundImage = ['images/about.jpg', 'images/exp.jpg', 'images/about.jpg']
 let aboutBtn = document.getElementById('about-btn')
@@ -20,12 +23,12 @@ homeBtn.addEventListener('click', function () {
         currentBg = 0;
         document.body.style.backgroundImage = `url(${ogBg})`
     }
-    
+
 })
 
 // Changing the About Text
 
-function changeTextAbout(){
+function changeTextAbout() {
     if (currentText < content.length) {
         aboutText.textContent = content[currentText]
         currentText++;
@@ -37,7 +40,7 @@ function changeTextAbout(){
 
 // Changing the Experience Text
 
-function changeTextExp(){
+function changeTextExp() {
     if (currentText < content.length) {
         aboutText.textContent = content[currentText]
         currentText++;
@@ -49,7 +52,7 @@ function changeTextExp(){
 
 // Changing the Project Text
 
-function changeTextProj(){
+function changeTextProj() {
     if (currentText < content.length) {
         aboutText.textContent = content[currentText]
         currentText++;
@@ -61,7 +64,18 @@ function changeTextProj(){
 
 // Alert when Submitting
 
-function submitBtnn(){
+function submitBtnn() {
     alert('You sure you want to submit ?');
 }
 
+// Navigation for Mobile
+
+function openMenu() {
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+        menubtn.style.display = 'block';
+    } else {
+        menu.style.display = 'block';
+        menubtn.style.display = 'none';
+    }
+}

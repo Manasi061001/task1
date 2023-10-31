@@ -1,33 +1,43 @@
 /* Whole Page */
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a{
+a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
-    color: #000000;
+    color: #ff0303;
 }
 
-li{
+ul li {
     list-style: none;
+    display: inline-block;
+}
+
+.menubtn {
+    display: none;
+    font-size: 30px;
+    margin-left: 10px;
+
 }
 
 /* Navigation Bar */
 
-.navBar{
+.menubar{
     background: #ADC4CE;
     height: 80px;
     width: 100%;
 }
 
-.navMenu{
-    text-align: center;
+#menu{
     display: flex;
     justify-content: space-around;
+    text-align: center;
     line-height: 80px;
 }
 
@@ -170,36 +180,101 @@ form textarea {
 
 @media screen and (max-width: 650px) {
 
-    /* Feedback Form */
+    /* FEEDBACK FORM */
 
     form input,
     form textarea {
-        width: 300px;
+        width: 250px;
+    }
+
+    /* NAVIGATION BAR */
+
+    .nav-bar {
+        width: 100%;
+        height: 60px;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    /* THE SYMBOL */
+
+    span {
+        position: absolute;
+        left: 0;
+        top: -25px;
+    }
+
+    /* HOME PAGE */
+
+    #home-btn {
+        width: 240px;
     }
 
     /* MY PROJECTS */
 
     #project-btn {
-        width: 270px;
+        width: 240px;
     }
 
     /* EXPERIENCE PAGE */
 
     #exp-btn {
-        width: 270px;
+        width: 240px;
     }
 
     /* ABOUT ME */
 
     #about-btn {
-        width: 270px;
+        background-color: #FFCF96;
+        width: 240px;
     }
 
     /* TEXT BOX */
 
     #aboutText {
-        width: 350px;
+        width: 270px;
     }
 
-}
+    /* LISTS ELEMENTS */
 
+    ul {
+        display: none;
+    }
+
+    ul li {
+        display: block;
+        margin: 20px;
+        line-height: 30px;
+    }
+
+    a {
+        font-weight: bold;
+        font-size: 20pxpx;
+    }
+
+    /* MENU BAR */
+
+    .menubar a:hover {
+        border-bottom: 3px solid rgb(255, 255, 255);
+    }
+
+    .menubtn {
+        display: block;
+        padding-top: 45px;
+        padding-left: 20px;
+    }
+
+    #menu {
+        width: 50%;
+        height: 100vh;
+        background-color: rgb(121, 167, 212);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding-left: 10px;
+        text-align: left;
+        cursor: pointer;
+    }
+}

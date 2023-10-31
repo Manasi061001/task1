@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 
 <body background="images/exp.jpg" style="background-size: cover;">
-    <header>
-        <nav class="navBar">
-            <ul class="navMenu">
-                <li class="navItem"><a href="index.html">Home</a></li>
-                <li class="navItem"><a href="about.html">About</a></li>
-                <li class="navItem"><a href="exp.html">Experience</a></li>
-                <li class="navItem"><a href="project.html">Projects</a></li>
-                <li class="navItem"><a href="contact.html">Feedback</a></li>
+    <div class="nav-bar">
+        <nav class="menubar">
+            <span class="menubtn" onclick="openMenu()">&#9776</span>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="exp.html">Experience</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Feedback</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
     <div class="home">
         <button class="home-btn" id="home-btn">CLICK TO CHANGE THE BACKGROUND IMAGE</button>
     </div>
