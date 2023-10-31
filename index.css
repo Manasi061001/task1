@@ -37,7 +37,8 @@ ul li {
     background: black;
     height: 80px;
     width: 100%;
-    border: 2px solid white;
+    border-bottom: 2px solid white;
+    cursor: pointer;
 }
 
 #menu{
@@ -61,7 +62,7 @@ footer {
     height: 50px;
     background: black;
     color: red;
-    border: 2px solid white;
+    border-top: 2px solid white;
 }
 
 /* Home Page */
